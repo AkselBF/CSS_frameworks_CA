@@ -2,7 +2,17 @@
 @import "./utils/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-/*imported files*/
+/*
+  imported files
+*/
 @import "./general";
+
+/* Base */
+@import "./base/typography";
+
+/* Layout */
 @import "./layout/header";
+@import "./layout/forms";
+
+/*Components*/
 @import "./components/buttons";

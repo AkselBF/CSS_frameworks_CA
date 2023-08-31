@@ -1,0 +1,33 @@
+
+h1 {
+  color: $font;
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+.profile_title {
+  background-color: $profile;
+  margin: 0 auto;
+  padding: 50px 0 40px 0;
+}
+
+.posts_title {
+  color: $font;
+  margin: 60px 0 0 40px;
+}
+
+.posts_line1 {
+  width: 100px;
+  height: 4px;
+  margin: 10px 0 5px 40px;
+  border-radius: 0 30px 30px 0;
+  background-color: $font;
+}
+
+.posts_line2 {
+  width: 50px;
+  height: 3px;
+  margin: 5px 0 50px 40px;
+  border-radius: 0 30px 30px 0;
+  background-color: $font;
+}

@@ -1,5 +1,5 @@
 header {
-  background-color: #ffffff;
+  background-color: $menu;
   position: sticky;
   top: 0;
   width: 100%;
@@ -7,11 +7,11 @@ header {
   z-index: 100;
 
   .navigation {
-    height: 40%;
+    height: 30%;
     width: 320px;
     position: fixed;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: $menu;
     right: 0;
     top: 80px;
     max-height: 0;
@@ -34,7 +34,7 @@ header {
     text-decoration: none;
     font-size: 1.2em;
     padding: 25px 50px 25px 50px;
-    color: #000000;
+    color: $font;
   }
   
   .menu li:hover {
@@ -97,7 +97,7 @@ header {
 }
 
 .burgerline {
-  background: #000000;
+  background: $font;
   display: block;
   height: 4px;
   position: relative;
@@ -107,7 +107,7 @@ header {
 
 .burgerline::before,
 .burgerline::after {
-  background:#000000;
+  background: $font;
   content: ' ';
   display: block;
   height: 100%;
