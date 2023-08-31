@@ -1,0 +1,8 @@
+/*Bootstrap*/
+@import "./utils/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*imported files*/
+@import "./general";
+@import "./layout/header";
+@import "./components/buttons";

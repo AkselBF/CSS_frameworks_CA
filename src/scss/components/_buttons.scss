@@ -1,0 +1,12 @@
+
+.btn {
+  background-color: $btn;
+  width: 50%;
+  font-weight: 500;
+  margin: 40px auto 70px auto;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: $btn-hover;
+  }
+}
