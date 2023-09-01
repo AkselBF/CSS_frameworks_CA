@@ -14,5 +14,10 @@
 @import "./layout/header";
 @import "./layout/forms";
 
-/*Components*/
+/* Components */
 @import "./components/buttons";
+@import "./components/search-bar";
+@import "./components/carousel";
+
+/* Pages */
+@import "./pages/feed";

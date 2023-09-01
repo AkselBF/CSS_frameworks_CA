@@ -6,8 +6,100 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="../dist/css/styles.css">
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
-<body>
-  
+<body class="feed">
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../profile/index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+          Back
+        </a>
+        <ul class="menu">
+          <li><a href="../index.html">Log out</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="feed_page">
+    <img src="../images/feed_image.png" class="img-fluid" alt="feed intro">
+    <h1 class="feed_title">Posts</h1>
+
+    <!--
+      Search bar
+    -->
+    <input class="search_bar" type="text" placeholder="Search...">
+
+    <!--
+    <div class="input-group">
+      <div class="form-outline">
+        <input id="search-input" type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <button id="search-button" type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>-->
+
+    <!--
+      posts
+    -->
+    <div class="feed_posts">
+      <div class="thumbnail">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">HTML quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+
+      <div class="thumbnail">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">CSS quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+
+      <div class="thumbnail">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">JS quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
