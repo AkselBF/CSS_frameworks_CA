@@ -6,7 +6,10 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="../dist/css/styles.css">
+
   <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script defer src="../javascript/searchbar.js"></script>
+  <script defer src="../javascript/filter.js"></script>
 </head>
 <body class="feed">
   <header>
@@ -32,24 +35,28 @@
     <!--
       Search bar
     -->
-    <input class="search_bar" type="text" placeholder="Search...">
+    <input class="search_bar form-control" type="text" placeholder="Search...">
 
     <!--
-    <div class="input-group">
-      <div class="form-outline">
-        <input id="search-input" type="search" id="form1" class="form-control" />
-        <label class="form-label" for="form1">Search</label>
-      </div>
-      <button id="search-button" type="button" class="btn btn-primary">
-        <i class="fas fa-search"></i>
+      Dropdown filter 
+    -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter
       </button>
-    </div>-->
+      <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+        <li><a class="dropdown-item" href="#" data-filter="all">All</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="html">HTML</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="css">CSS</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="js">JavaScript</a></li>
+      </ul>
+    </div>
 
     <!--
       posts
     -->
     <div class="feed_posts">
-      <div class="thumbnail">
+      <div class="thumbnail" data-filter="html">
         <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
         <div class="thumbnail_desc">
           <h4 class="thumbnail_title">HTML quiz</h4>
@@ -66,7 +73,7 @@
         </div>
       </div>
 
-      <div class="thumbnail">
+      <div class="thumbnail" data-filter="css">
         <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
         <div class="thumbnail_desc">
           <h4 class="thumbnail_title">CSS quiz</h4>
@@ -83,7 +90,7 @@
         </div>
       </div>
 
-      <div class="thumbnail">
+      <div class="thumbnail" data-filter="js">
         <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
         <div class="thumbnail_desc">
           <h4 class="thumbnail_title">JS quiz</h4>
@@ -100,6 +107,53 @@
         </div>
       </div>
     </div>
+
+    <!-- Button trigger modal -->
+    <div class="modal_button">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add post
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input">
+              <input
+                name="post_title"
+                type="text"
+                class="input_box"
+                id="input_name"
+                placeholder="Title..."
+                required
+              />
+              <div class="form_error"></div>
+            </div>
+            <div class="input">
+              <input
+                name="post_text"
+                type="text"
+                class="input_box"
+                id="input_name"
+                placeholder="Text..."
+                required
+              />
+              <div class="form_error"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </main>
 </body>
 </html>

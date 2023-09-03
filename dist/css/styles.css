@@ -12311,7 +12311,17 @@ header {
   background-color: #006eff;
 }
 
+.modal_button {
+  justify-content: center;
+  text-align: right;
+}
+.modal_button .btn {
+  width: 160px;
+  margin: 20px 17% 50px auto;
+}
+
 .search_bar {
+  width: 260px;
   justify-content: center;
   margin: 30px auto;
   padding: 5px 10px;
@@ -12330,6 +12340,30 @@ header {
 .d-block {
   width: 100%;
   margin: auto;
+}
+
+.dropdown {
+  align-content: center;
+  text-align: right;
+}
+.dropdown .btn {
+  width: 160px;
+  background-color: #006eff;
+  margin: -90px 17% 40px 10px;
+}
+
+.modal-body {
+  justify-content: center;
+}
+.modal-body input {
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid #8e8e8e;
+  border-radius: 5px;
+}
+
+.modal-footer .btn {
+  margin: 10px;
 }
 
 /* Pages */
