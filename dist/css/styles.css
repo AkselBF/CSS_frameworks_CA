@@ -11920,6 +11920,9 @@ body {
   padding-bottom: 60px;
 }
 
+/*
+  Media querries
+*/
 /* Base */
 h1, .h1 {
   color: #ffffff;
@@ -11958,10 +11961,15 @@ h1, .h1 {
 /* Feed page */
 .feed_title {
   position: absolute;
-  top: 5%;
+  top: 2%;
   width: 100%;
   margin: 50px auto;
   color: #000000;
+}
+@media (min-width: 700px) {
+  .feed_title {
+    top: 5%;
+  }
 }
 
 /* Layout */
@@ -12330,12 +12338,17 @@ header {
 }
 
 .carousel {
-  width: 600px;
+  width: 300px;
   margin: 20px auto 0 auto;
+}
+@media (min-width: 600px) {
+  .carousel {
+    width: 60%;
+  }
 }
 
 /*
-  Profile carousel images
+  Profile carousel images 
 */
 .d-block {
   width: 100%;
@@ -12344,14 +12357,22 @@ header {
 
 .dropdown {
   align-content: center;
-  text-align: right;
+  text-align: center;
 }
 .dropdown .btn {
   width: 160px;
   background-color: #006eff;
-  margin: -90px 17% 40px 10px;
+  margin: 20px auto 40px auto;
 }
 
+@media (min-width: 1000px) {
+  .dropdown {
+    text-align: right;
+  }
+  .dropdown .btn {
+    margin: -80px 17% 40px 10px;
+  }
+}
 .modal-body {
   justify-content: center;
 }

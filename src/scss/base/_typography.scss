@@ -36,8 +36,12 @@ h1 {
 /* Feed page */
 .feed_title {
   position: absolute;
-  top: 5%;
+  top: 2%;
   width: 100%;
   margin: 50px auto;
   color: $black;
+
+  @media (min-width: 700px) {
+    top: 5%;
+  }
 }

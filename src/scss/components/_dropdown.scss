@@ -1,10 +1,20 @@
 .dropdown {
   align-content: center;
-  text-align: right;
+  text-align: center;
 
   .btn {
     width: 160px;
     background-color: $btn-hover;
-    margin: -90px 17% 40px 10px;
+    margin: 20px auto 40px auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .dropdown {
+    text-align: right;
+
+    .btn {
+      margin: -80px 17% 40px 10px;
+    }
   }
 }

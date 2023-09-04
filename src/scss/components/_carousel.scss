@@ -1,11 +1,15 @@
 
 .carousel {
-  width: 600px;
+  width: 300px;
   margin: 20px auto 0 auto;
+
+  @media (min-width: 600px) {
+    width: 60%;
+  }
 }
 
 /*
-  Profile carousel images
+  Profile carousel images 
 */
 .d-block {
   width: 100%;
