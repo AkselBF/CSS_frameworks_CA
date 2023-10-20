@@ -1,0 +1,22 @@
+
+.btn {
+  background-color: $btn;
+  width: 50%;
+  font-weight: 500;
+  margin: 40px auto 70px auto;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: $btn-hover;
+  }
+}
+
+.modal_button {
+  justify-content: center;
+  text-align: right;
+
+  .btn {
+    width: 160px;
+    margin: 20px 17% 50px auto;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./dist/css/styles.css">
+</head>
+<body>
+  <main>
+    <form class="login_form" action="./profile/index.html">
+      <h1>Sign up</h1>
+      <div class="title_line"></div>
+
+      <div class="input">
+        <input
+          name="username"
+          type="text"
+          class="input_box"
+          id="input_name"
+          placeholder="Username..."
+          required
+        />
+        <div class="form_error"></div>
+      </div>
+
+      <div class="input">
+        <input
+          name="password"
+          type="text"
+          class="input_box"
+          id="input_password"
+          placeholder="Password..."
+          minlength="8"
+          required
+        />
+        <div class="form_error"></div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">
+        Log in
+      </button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../dist/css/styles.css">
+
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script defer src="../javascript/searchbar.js"></script>
+  <script defer src="../javascript/filter.js"></script>
+</head>
+<body class="feed">
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../profile/index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+          Back
+        </a>
+        <ul class="menu">
+          <li><a href="../index.html">Log out</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="feed_page">
+    <img src="../images/feed_image.png" class="img-fluid" alt="feed intro">
+    <h1 class="feed_title">Posts</h1>
+
+    <!--
+      Search bar
+    -->
+    <input class="search_bar form-control" type="text" placeholder="Search...">
+
+    <!--
+      Dropdown filter 
+    -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+        <li><a class="dropdown-item" href="#" data-filter="all">All</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="html">HTML</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="css">CSS</a></li>
+        <li><a class="dropdown-item" href="#" data-filter="js">JavaScript</a></li>
+      </ul>
+    </div>
+
+    <!--
+      posts
+    -->
+    <div class="feed_posts">
+      <div class="thumbnail" data-filter="html">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">HTML quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+
+      <div class="thumbnail" data-filter="css">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">CSS quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+
+      <div class="thumbnail" data-filter="js">
+        <img src="../images/css_image.png" class="feed-img" alt="thumbnail image">
+        <div class="thumbnail_desc">
+          <h4 class="thumbnail_title">JS quiz</h4>
+          <p class="thumbnail_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="navbar-brand" href="../profile/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            Username
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <div class="modal_button">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add post
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input">
+              <input
+                name="post_title"
+                type="text"
+                class="input_box"
+                id="input_name"
+                placeholder="Title..."
+                required
+              />
+              <div class="form_error"></div>
+            </div>
+            <div class="input">
+              <input
+                name="post_text"
+                type="text"
+                class="input_box"
+                id="input_name"
+                placeholder="Text..."
+                required
+              />
+              <div class="form_error"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+</body>
+</html>

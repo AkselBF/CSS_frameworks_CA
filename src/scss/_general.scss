@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient($primary, $secondary, $primary);
+  position: relative;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.feed_page {
+  background-color: $profile;
+  padding-bottom: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.feed_posts {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 300px;
+  color: $font;
+  background-color: $black;
+  margin: 30px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 20px;
+
+  .feed-img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .thumbnail_desc {
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .thumbnail_title {
+    color: $username;
+  }
+
+  .thumbnail_text {
+    margin-bottom: 30px;
+  }
+}
+
+/*
+  Profile page: posts
+*/
+.posts {
+  background-color: $profile;
+  padding-bottom: 60px;
+}
+
+
+/*
+  Media querries
+*/

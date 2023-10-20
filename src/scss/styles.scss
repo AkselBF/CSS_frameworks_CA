@@ -1,0 +1,25 @@
+/*Bootstrap*/
+@import "./utils/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*
+  imported files
+*/
+@import "./general";
+
+/* Base */
+@import "./base/typography";
+
+/* Layout */
+@import "./layout/header";
+@import "./layout/forms";
+
+/* Components */
+@import "./components/buttons";
+@import "./components/search-bar";
+@import "./components/carousel";
+@import "./components/dropdown";
+@import "./components/modal";
+
+/* Pages */
+@import "./pages/feed";
